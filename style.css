@@ -1,0 +1,98 @@
+:root {
+
+}
+
+/* Body */
+body {
+    font-family: OCR A Std, monospace;
+    margin: 0;
+    background-color: aquamarine;
+}
+header {
+    text-align: center;
+    font-size: 35px;
+}
+div#content-container {
+    display: flex;
+    gap: 12%;
+    height: 560px;
+}
+
+/* Grid */
+div#grid-container {
+
+}
+div.row-container {
+    display: flex;
+}
+
+/* Paint Options */
+div#options-container{
+    border: 2px solid black;
+    margin-left: 45px;
+    border-radius: 16px;
+    background-color: bisque;
+}
+ul#options-list {
+    list-style: none;
+}
+li.options-list-item {
+    margin-top: 20px;
+    margin-right: 30px;
+}
+div.color-box {
+    display: flex;
+    gap: 15px;
+    margin-bottom: -15px;
+    margin-top: -5px;
+}
+div.color-display {
+    width: 35px;
+    height: 35px;
+    border: 0.5px solid black;
+}
+div.color-label {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+div.grid-label {
+    margin-top: 20px;
+    margin-bottom: -15px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+button {
+    padding: 4px 0px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: lightgray;
+    border-radius: 12px;
+}
+button.active,button:hover {
+    background-color: lightcoral;
+    font-style: italic;
+}
+button.active {
+    border: 3px solid white;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.fa-square-github {
+    color: darkblue;
+    transition: transform 0.5s ease-in-out,  color 0.5s ease-in-out;
+}
+
+.fa-square-github:hover {
+    transform: rotate(1080deg) scale(1.4);
+    color: lightsalmon;
+}
+
