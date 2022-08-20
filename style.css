@@ -11,6 +11,7 @@ body {
 header {
     text-align: center;
     font-size: 35px;
+    margin-bottom: -30px;
 }
 div#content-container {
     display: flex;
@@ -85,14 +86,17 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-top: 15px;
+    color: white;
+    background-color: rgb(40, 40, 114);
 }
 .fa-square-github {
-    color: darkblue;
+    color: white;
     transition: transform 0.5s ease-in-out,  color 0.5s ease-in-out;
 }
 
 .fa-square-github:hover {
     transform: rotate(1080deg) scale(1.4);
-    color: lightsalmon;
+    color: #ffc600;
 }
 
