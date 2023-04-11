@@ -1,0 +1,14 @@
+{
+  "name": "etch-a-sketch",
+  "version": "1.0.0",
+  "description": "My version of an online etch-a-sketch tool via the Odin Project with additional features such as color grab, shading, grid dimension adjustment etc. Try it out here: https://skothar3.github.io/etch-a-sketch/",
+  "main": "code.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "2.8.7"
+  }
+}
