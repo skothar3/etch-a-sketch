@@ -29,7 +29,7 @@ let adjustedGridDim =
 createGrid();
 
 // Get the container holding all button and slider options
-optionsDiv = document.querySelector("#options-container");
+const optionsDiv = document.querySelector("#options-container");
 
 // Create list to contain paint option items (sliders and buttons)
 const optionsList = document.createElement("ul");
@@ -76,7 +76,7 @@ optionsItems[optsNum].appendChild(colorOptions);
 optsNum++;
 
 // Create container to hold background color display window and label (flexed)
-bgColorBox = document.createElement("div");
+const bgColorBox = document.createElement("div");
 bgColorBox.classList.add("color-box");
 optionsItems[optsNum].appendChild(bgColorBox);
 optsNum++;
@@ -342,10 +342,12 @@ function rgb2hsl(rgb) {
     S = 0;
   } else {
     S = c / (1 - Math.abs(2 * L - 1));
+    let segment;
+    let shift;
     switch (max) {
       case r:
-        var segment = (g - b) / c;
-        var shift = 0 / 60; // R° / (360° / hex sides)
+        segment = (g - b) / c;
+        shift = 0 / 60; // R° / (360° / hex sides)
         if (segment < 0) {
           // H > 180, full rotation
           shift = 360 / 60; // R° / (360° / hex sides)
@@ -353,13 +355,13 @@ function rgb2hsl(rgb) {
         H = segment + shift;
         break;
       case g:
-        var segment = (b - r) / c;
-        var shift = 120 / 60; // G° / (360° / hex sides)
+        segment = (b - r) / c;
+        shift = 120 / 60; // G° / (360° / hex sides)
         H = segment + shift;
         break;
       case b:
-        var segment = (r - g) / c;
-        var shift = 240 / 60; // B° / (360° / hex sides)
+        segment = (r - g) / c;
+        shift = 240 / 60; // B° / (360° / hex sides)
         H = segment + shift;
         break;
     }
@@ -381,7 +383,7 @@ function createGrid() {
     rowContainer[i].classList.add("row-container");
     gridContainer.appendChild(rowContainer[i]);
 
-    for (j = 0; j < numSquaresPerSide; j++) {
+    for (let j = 0; j < numSquaresPerSide; j++) {
       let div = document.createElement("div");
       div.classList.add("grid");
       div.style.width = `${adjustedGridDim / numSquaresPerSide}px`;
